@@ -1,0 +1,113 @@
+.about-title h1{
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+
+.about-title h1:hover{
+    background: linear-gradient(270deg , green 50% , violet 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.misson h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.misson h1:hover{
+    background: linear-gradient(45deg , #26de57 , #070f0c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose-us h1:hover{
+    background: linear-gradient(45deg , #26de57 , #070f0c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.para {
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15rem;
+}
+
+.mission-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90rem;
+    margin-left: 3rem;
+}
+ 
+
+#p-list{
+    width: 25rem;
+    border: 1px solid;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;  
+    padding-right: 2rem;
+}
+
+#p-list:hover{
+    border: 2px solid rgb(130, 238, 139);
+    background-image: linear-gradient(45deg , #26de57 , #308865);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+
+
+.p-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.p-img img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.p-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-bottom: 1rem;
+}
+
+.p-title:hover{
+    background: linear-gradient(270deg , orange 50% , violet 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose-us h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.community h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

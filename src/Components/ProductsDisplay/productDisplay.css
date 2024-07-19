@@ -26,12 +26,31 @@
     flex-direction: column;
 }
 
+.display-left button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    border-radius: 20%;
+}
+
+.display-left button:hover{
+    transition: 0.6s;
+   background: linear-gradient(264deg , green 5% , rgb(30, 177, 193) 100%);
+}
+
 .display-left p {
     margin-left: 10rem;
 }
 
 .display-left img {
-    margin-left: 10rem;
+    width: 350px;
+    height: 300px;
+    margin-left: 5rem;
 }
 
 .banner li img{

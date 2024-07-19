@@ -1,6 +1,7 @@
 import React from 'react'
 import './CSS/Products.css'
-import all_products from '../Components/Assets/All_products'
+import vegetable from '../Components/Assets/Vegetable'
+import fruits from '../Components/Assets/Fruits'
 import Orders from '../Components/Orders/Orders'
 
 const Products = () => {
@@ -12,15 +13,15 @@ const Products = () => {
       
     
         <div className="products-veggies">
-          {all_products.map((items, i) => {
-            return <Orders key={i} id={items.id} name={items.name} image={items.image} price={items.price} type={items.type} description={items.description} />
+          {vegetable.map((items, i) => {
+            return <Orders key={i} id={items.id} name={items.name} image={items.image} price={items.price}   />
           })}
         </div>
         <h1>Fresh Farms Fruits</h1>
         <hr />
         <div className="products-veggies">
-          {all_products.map((items, i) => {
-            return <Orders key={i} id={items.id} name={items.name} image={items.image} price={items.price} type={items.type} description={items.description} />
+          {fruits.map((items, i) => {
+            return <Orders key={i} id={items.id} name={items.name} image={items.image} price={items.price}  />
           })}
         </div>
         </div>

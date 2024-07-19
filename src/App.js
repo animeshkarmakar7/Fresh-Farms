@@ -7,9 +7,8 @@ import Products from './Pages/Products'
 import ProductClick from './Pages/ProductClick'
 import Cart from './Pages/Cart'
 import ShopContextProvider from './Components/Context/ShopContext'
-
-
-
+import Aboutus from './Components/Aboutus/Aboutus'
+import Footer from './Footer/Footer'
 
 const App = () => {
   return (
@@ -25,7 +24,9 @@ const App = () => {
       <Route path=':productId' element={<ProductClick/>}/>
       </Route>
      <Route path='/cart' element={<Cart/>} />
+     <Route path='/About' element={<Aboutus/>} />
       </Routes>
+      <Footer/>
       </BrowserRouter>
       </ShopContextProvider>
     </div>

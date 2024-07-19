@@ -17,18 +17,19 @@ const Navbar = () => {
                     At Your Doorsteps within mins
                 </div>
                 <div className="title">
-                    <p>GREEN FARMS</p>
+                    <p>FRESH-FARMS</p>
                 </div>
                 <div className="login">
                     <div className="login-img">
                         <Link to='/login'><img src={user} alt="" /></Link>
                     </div>
                     <div className="cart">
-                        <Link to='/cart'><img src={cart} alt="" />
+                        <div><Link to='/cart'><img src={cart} alt="" /></Link></div>
+                        
                             <div className="cart-count">{getTotalCartItems()}</div>
-                            </Link>
+                            
                         <div className="cart-add">
-                            Cart
+                       <Link style={{textDecoration:'none' , color:'black'}} to='/cart'>CART</Link>  
                         </div>
                     </div>
                 </div>

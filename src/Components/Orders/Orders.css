@@ -1,27 +1,39 @@
 .orders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 350px;
     border: 1px solid;
     border: none;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset 5px 5px 5px rgba(0,0,0,0.05),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;  
+   margin-top: 2rem;           
 }
 
-.orders :hover{
-
+.orders:hover{
     box-shadow: 2px;
 }
 
 .orders img{
-    
-    width: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 350px;
+    width: 350px;
+   
 }
 
 .items-prices p{
-   margin: 6px 0px; 
+    margin-left: -10rem;
+    font-weight: 600;
 }
 
 .items-prices{
     display: flex;
     gap: 20px;
-  
     align-items: center;
 }
 .item-new-prices{
@@ -35,11 +47,24 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    margin-left: -5rem;
+    padding-bottom: 1rem;
 }
 
-.addtocart{
+
+.addtocart button{
     width: 105px;
     border: 1px solid;
-    padding: 3px;
-    margin-right: 40px;
+    color: black;
+    padding: 6px;
+    margin-right: 50px;
+    background-color: aliceblue;
+    
+}
+
+.addtocart button:hover{
+    background-color: aqua;
+    
+    transition: 0.3s;
+    
 }

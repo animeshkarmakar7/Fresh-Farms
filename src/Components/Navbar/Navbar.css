@@ -64,8 +64,10 @@
     
 }
 
-.cart-add{
+.cart-add {
+   cursor: pointer;
     font-weight: bolder;
+    
 }
 
 .menu {
@@ -91,7 +93,7 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     margin-top:-35px;
-    margin-left: -35px;
+  margin-left: -13px;
     font-size: 14px;
     background-color: red;
     color: white;
