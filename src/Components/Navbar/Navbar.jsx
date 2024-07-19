@@ -28,6 +28,7 @@ const Navbar = () => {
                         
                             <div className="cart-count">{getTotalCartItems()}</div>
                             
+                            
                         <div className="cart-add">
                        <Link style={{textDecoration:'none' , color:'black'}} to='/cart'>CART</Link>  
                         </div>
