@@ -1,0 +1,45 @@
+.orders{
+    width: 350px;
+    border: 1px solid;
+    border: none;
+}
+
+.orders :hover{
+
+    box-shadow: 2px;
+}
+
+.orders img{
+    
+    width: 300px;
+}
+
+.items-prices p{
+   margin: 6px 0px; 
+}
+
+.items-prices{
+    display: flex;
+    gap: 20px;
+  
+    align-items: center;
+}
+.item-new-prices{
+    color: brown;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.order-set{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.addtocart{
+    width: 105px;
+    border: 1px solid;
+    padding: 3px;
+    margin-right: 40px;
+}

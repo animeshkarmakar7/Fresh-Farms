@@ -1,0 +1,47 @@
+.productdisplay {
+    display: flex;
+    gap: 2rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 9rem;
+    
+}
+
+.product-container {
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    margin-left: 7rem;
+}
+
+.display-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-left p {
+    margin-left: 10rem;
+}
+
+.display-left img {
+    margin-left: 10rem;
+}
+
+.banner li img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.banner li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
