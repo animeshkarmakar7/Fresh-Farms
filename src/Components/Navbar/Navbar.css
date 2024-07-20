@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
     height: 4rem;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(264deg, green 50%, white 100%);
@@ -26,6 +27,42 @@
     margin-left: 80px;
     width: 40rem;
     padding: 10px;
+}
+
+.search{
+    display: flex;
+    
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    height: 30px;
+    background: white;
+    border-radius:30px ;
+    box-shadow: 0 10px 25px rgba(0 ,0 , 0, 0.3);
+}
+
+.search:hover input{
+    width: 400px;
+}
+
+.search input{
+    width: 0px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    font-size: 18px;
+}
+
+.icon img{
+    color: aquamarine;
+    font-size: 18px;
+}
+
+.icon img{
+    width: 2rem;
+    height: 2rem;
 }
 
 
@@ -72,6 +109,8 @@
 
 .menu {
     display: flex;
+    position: relative;
+    
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -81,9 +120,16 @@
 }
 
 .menu li{
+    position: relative;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1rem;
 cursor: pointer;
+}
+
+.menu-li{
+   padding: 0 23px;
+font-weight: 500;
+    color: black;
 }
 
 .cart-count{

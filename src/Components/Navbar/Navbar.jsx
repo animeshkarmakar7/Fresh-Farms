@@ -4,10 +4,12 @@ import cart from '../Assets/add-cart.png'
 import user from '../Assets/user.png'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../Context/ShopContext';
+import search from '../Assets/loupe.png'
 
 
 
 const Navbar = () => {
+
     const { getTotalCartItems } = useContext(ShopContext)
     return (
 
@@ -37,10 +39,13 @@ const Navbar = () => {
             </div>
 
             <ul className="menu">
-                <li><Link style={{ textDecoration: 'none' }} to='/'>Home</Link></li>
-                <li><Link style={{ textDecoration: 'none' }} to='/Products'>Products</Link></li>
-                <input type="text" placeholder='search' />
-                <li><Link style={{ textDecoration: 'none' }} to='/About'>About</Link></li>
+                <li><Link className='menu-li' style={{ textDecoration: 'none' }} to='/'>Home</Link></li>
+                <li><Link className='menu-li' style={{ textDecoration: 'none' }} to='/Products'>Products</Link></li>
+                <div className="search">
+                <input type="text" placeholder='search...' />
+               <div className='icon'><Link to=''><img src={search} alt="" /></Link></div> 
+                </div>
+                <li><Link className='menu-li' style={{ textDecoration: 'none' }} to='/About'>About</Link></li>
 
             </ul>
         </>

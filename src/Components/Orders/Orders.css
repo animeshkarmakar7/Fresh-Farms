@@ -19,10 +19,12 @@
 }
 
 .orders img{
+    margin-top: 1rem;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    height: 350px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
+    border-radius: 20%;
    
 }
 
