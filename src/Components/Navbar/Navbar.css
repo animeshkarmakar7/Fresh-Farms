@@ -1,7 +1,6 @@
 .navbar {
     display: flex;
     height: 4rem;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(264deg, green 50%, white 100%);
@@ -31,7 +30,6 @@
 
 .search{
     display: flex;
-    
     align-items: center;
     cursor: pointer;
     padding: 10px 20px;
@@ -109,26 +107,38 @@
 
 .menu {
     display: flex;
-    position: relative;
-    
     justify-content: space-around;
-    align-items: center;
-    list-style: none;
+    
     background-color: rgb(100, 214, 100);
     padding: 10px;
     margin: 1px;
+  
+    list-style: none;
+     align-items: center;
+     gap: 2rem;
 }
 
 .menu li{
     position: relative;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1rem;
-cursor: pointer;
+    cursor: pointer;
 }
 
+.menu hr {
+    border: 0; /* Remove default border */
+    width: 80%; /* Set width to 50% of the parent element */
+    height: 2px; /* Set height */
+    border-radius: 10px; /* Round the corners */
+    background-color: black; /* Set background color */
+    margin: 0 auto;
+    margin-right: 3px; /* Center horizontally */
+}
+
+
 .menu-li{
-   padding: 0 23px;
-font-weight: 500;
+   
+    font-weight: 500;
     color: black;
 }
 
@@ -144,4 +154,38 @@ font-weight: 500;
     background-color: red;
     color: white;
     border-radius: 11px;
+    }
+
+    .fresh-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 10px; 
+        gap:10px;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .dropdown li {
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    
+    .dropdown li:hover {
+        background-color: #f0f0f0;
     }

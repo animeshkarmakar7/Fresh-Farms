@@ -9,6 +9,11 @@ import Cart from './Pages/Cart'
 import ShopContextProvider from './Components/Context/ShopContext'
 import Aboutus from './Components/Aboutus/Aboutus'
 import Footer from './Footer/Footer'
+import Checkout from './Components/Checkout/Checkout'
+import ConfirmOrder from './Components/ConfirmOrder/ConfirmOrder'
+import SearchResult from './SearchResult/SearchResult'
+import BuyNow from './Components/BuyNow/BuyNow'
+
 
 const App = () => {
   return (
@@ -25,6 +30,10 @@ const App = () => {
       </Route>
      <Route path='/cart' element={<Cart/>} />
      <Route path='/About' element={<Aboutus/>} />
+     <Route path='/checkout' element={<Checkout/>} />
+     <Route path='/confirmOrder' element={<ConfirmOrder/>} />
+    <Route path="/product/:id" element={<SearchResult/>}/>
+    <Route path='/buynow/:id' element={<BuyNow/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>

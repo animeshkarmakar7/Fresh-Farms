@@ -6,41 +6,93 @@
 .banner {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: -5rem;
+    padding: 4px;
+ 
+    background: rgb(239, 239, 239);
     list-style: none;
     gap: 9rem;
     
 }
 
 .product-container {
+    background: rgba(255, 255, 255, 0.8);
     width: 80rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid;
+   
     margin-left: 7rem;
+    height: 35rem;
 }
 
 .display-left {
-    display: flex;
-    flex-direction: column;
+    margin-left: 1rem;
+    width: 30rem;
+    display: flex;  
+flex-direction: column;
+
+
+}
+
+.available-offers img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.display-left-img{
+    width: 27rem;
+    margin-left: 2rem;
+    height: 15rem;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+    inset 5px 5px 5px rgba(0,0,0,0.05),
+    5px 5px 5px rgba(0,0,0,0.05),
+    -5px -5px 5px rgba(255,255,255,0.5); 
+border-radius: 15px;  
+margin-top: 2rem;   
+background: rgba(255, 255, 255, 0.8);
+transition: transform 0.3s ease, backdrop-filter 0.3s ease;
+border: 1px solid rgba(255, 255, 255, 0.5);   
+}
+
+.display-left-img:hover{
+    transform: scale(1.05);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .display-left button{
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
-    width: 20rem;
-    height: 3rem;
-    padding: 1rem;
+    width: 205px;
+   
+    border: none;
     margin-top: 1rem;
-    margin-left: 5rem;
-    border-radius: 20%;
+      color: black;
+      padding: 10px;
+   
+      border-radius: 8px;
+      background-color: #ddd;
+      box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                   -6px -6px 10px -1px rgba(255,255,255,0.7);
+      border: 1px solid rgba(0,0,0,0);
+      transition:transform 0.1s;
 }
 
 .display-left button:hover{
-    transition: 0.6s;
-   background: linear-gradient(264deg , green 5% , rgb(30, 177, 193) 100%);
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+    -0.5px -0.5px 0px  rgba(255,255,255,1),
+    0.5px 0.5px 0px  rgba(255,255,255,0.15),
+     0px 12px 10px -10px rgba(0,0,0,0.05);
+border: 1px solid rgba(0,0,0,0.01);
+transform: translateY(2px);
 }
 
 .display-left p {
@@ -48,9 +100,12 @@
 }
 
 .display-left img {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     margin-left: 5rem;
+    margin-top: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .banner li img{
@@ -63,4 +118,16 @@
     justify-content: center;
     align-items: center;
 
+}
+
+.display-right{
+    margin-top: 1rem;
+}
+
+.display-buttons{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }

@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import './CartItems.css';
 import { ShopContext } from '../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
+import { Link } from 'react-router-dom';
+import minus from '../Assets/minus.png'
+import add from '../Assets/add.png'
 
 const CartItems = () => {
-    const { getTotalCartAmount, cartItems, removeFromCart, all_products, vegetable, fruit } = useContext(ShopContext);
+    const {addToCart , getTotalCartAmount, cartItems, removeFromCart, all_products, vegetable, fruit } = useContext(ShopContext);
 
     
     const allProducts = [...all_products, ...vegetable, ...fruit];
@@ -28,7 +31,11 @@ const CartItems = () => {
                                 <img src={product.image} alt="" className='carticon-product-icon' />
                                 <p>{product.name}</p>
                                 <p>${product.price}</p>
+                                <div className="cartitems-button">
+                                <button onClick={()=>{removeFromCart(product.id)}} className='cartitems-quantity-left'><img src={minus} alt="" /></button>
                                 <button className='cartitems-quantity'>{cartItems[product.id]}</button>
+                                <button onClick={()=>{addToCart(product.id)}} className='cartitems-quantity-right'><img src={add} alt="" /></button>
+                                </div>
                                 <p>${product.price * cartItems[product.id]}</p>
                                 <img src={remove_icon} onClick={() => { removeFromCart(product.id) }} alt="Remove" />
                             </div>
@@ -40,7 +47,7 @@ const CartItems = () => {
             })}
             <div className="cartitems-down">
                 <div className="cartitems-total">
-                    <h1>Cart Totals</h1>
+                    <h1 style={{marginBottom:'-2rem'}}>Cart Totals</h1>
                     <div>
                         <div className="cartitems-total-item">
                             <p>Subtotal</p>
@@ -57,7 +64,7 @@ const CartItems = () => {
                             <h3>${getTotalCartAmount()}</h3>
                         </div>
                     </div>
-                    <button>PROCEED TO CHECKOUT</button>
+                   <Link to='/checkout' ><button>PROCEED TO CHECKOUT</button></Link> 
                 </div>
             </div>
         </div>

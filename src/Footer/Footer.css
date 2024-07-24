@@ -1,7 +1,7 @@
 .footer{
     height: 30rem;
     width: auto;
-    background-color: green;
+    background-color: rgb(14, 14, 68);
 }
 
 .footer-title h1{
@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
    padding-top: 2rem;
+   color: white;
 }
 
 .footer-title hr{
@@ -22,6 +23,7 @@ display: flex;
 justify-content: center;
 width: 15rem;
 align-items: center;
+color: white;
 }
 
 .footer-social{
@@ -37,7 +39,9 @@ align-items: center;
 .footer-social-details{
     display: flex;
     justify-content: center;
+    color: white;
     align-items: center;
+    gap: 1rem;
 }
 
 #X{
@@ -62,6 +66,10 @@ align-items: center;
     align-items: center;
 }
 
+.footer-copyright p{
+    color: white;
+}
+
 
 
 .footer-copyright img{
@@ -74,4 +82,18 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-contact-title h1{
+    color: white;
+}
+
+.footer-contact-desp h2{
+color: white;
+}
+
+.footer-contact-desp p{
+    font-size: larger;
+    width: 70rem;
+    color: white;
 }

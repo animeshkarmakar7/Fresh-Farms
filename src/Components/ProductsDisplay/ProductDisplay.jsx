@@ -4,6 +4,8 @@ import reliable from '../Assets/reliability.png';
 import wallet from '../Assets/wallet.png';
 import rupee from '../Assets/rupee-indian.png';
 import { ShopContext } from '../Context/ShopContext';
+import { Link } from 'react-router-dom';
+import label from '../Assets/label.png'
 
 const ProductDisplay = ({ product }) => {
   const { addToCart } = useContext(ShopContext);
@@ -11,7 +13,7 @@ const ProductDisplay = ({ product }) => {
   return (
     <>
       <div className="product-container">
-        <ul className="banner">
+         <ul className="banner">
           <li>
             <img src={reliable} alt="Reliable" />
             <p>Best Quality</p>
@@ -24,25 +26,42 @@ const ProductDisplay = ({ product }) => {
             <img src={rupee} alt="Rupee" />
             <p>New Deals Everyday</p>
           </li>
-        </ul>
+        </ul> 
         <div className='productdisplay'>
           <div className="display-left">
+            <div className="display-left-img">
             <img src={product.image} alt={product.name} />
+            </div> 
+            <div className="display-buttons">
             <button onClick={() => addToCart(product.id)}>ADD TO CART</button>
-          </div>
+            <Link to={`/buynow/${product.id}`} style={{ textDecoration: 'none' }}>
+              <button>Buy Now</button>
+            </Link>
+            </div>
+            </div> 
+          
           <div className="display-right">
             <h1>{product.name}</h1>
             <div className="price">
-              ${product.price}
+              ${product.price.toFixed(2)}
             </div>
             <div className="rate">
               <div className="reviews"></div>
               <div className="ratings"></div>
             </div>
             <div className="available-offers">
-              <p><span><img src="" alt="Offer" /></span>Bank Offer 10% off up to ₹300 on Axis Bank Credit Card Txns, Min Txn Value: ₹2,500 <span>T&C</span></p>
-              <p><span><img src="" alt="Offer" /></span>Bank Offer 10% off up to ₹300 on HDFC Bank Credit Card Txns, Min Txn Value: ₹2,500<span>T&C</span></p>
-              <p><span><img src="" alt="Offer" /></span>Bank Offer 10% off up to ₹300 on IDFC FIRST Bank Credit Card Txns, Min Txn Value: ₹2,500<span>T&C</span></p>
+              <p>
+                <span><img src={label} alt="Offer" /></span>
+                Bank Offer 10% off up to ₹300 on Axis Bank Credit Card Txns, Min Txn Value: ₹2,500 <span>T&C</span>
+              </p>
+              <p>
+                <span><img src={label} alt="Offer" /></span>
+                Bank Offer 10% off up to ₹300 on HDFC Bank Credit Card Txns, Min Txn Value: ₹2,500<span>T&C</span>
+              </p>
+              <p>
+                <span><img src={label} alt="Offer" /></span>
+                Bank Offer 10% off up to ₹300 on IDFC FIRST Bank Credit Card Txns, Min Txn Value: ₹2,500<span>T&C</span>
+              </p>
             </div>
             <div className="services">
               <h1>Services</h1>
@@ -60,4 +79,3 @@ const ProductDisplay = ({ product }) => {
 };
 
 export default ProductDisplay;
-

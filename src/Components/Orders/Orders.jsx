@@ -19,7 +19,7 @@ const Orders = (props) => {
       </div>
       <div className="order-set">
         <div className="quantity">
-          Quantity
+          <span style={{fontWeight:'500'}}>Quantity:</span>1kg
         </div>
         <div className="addtocart">
           <button onClick={() => addToCart(props.id)}>Add To Cart</button>

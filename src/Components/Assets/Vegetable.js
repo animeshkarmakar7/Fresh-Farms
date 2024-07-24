@@ -23,6 +23,7 @@ const vegetable = [
         price: 180,
         image: "https://media.geeksforgeeks.org/wp-content/uploads/20240104142704/tomato.jpg"
     },
+   
     {
         id: 15,
         name: "Carrot",

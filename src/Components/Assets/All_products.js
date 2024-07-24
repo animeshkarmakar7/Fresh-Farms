@@ -90,6 +90,18 @@ const productsData = [
       image:
         "https://media.geeksforgeeks.org/wp-content/uploads/20240104142621/cocumber.jpg",
     },
+    {
+      id: 22,
+      name: "Peas",
+      price: 95,
+      image: "https://www.allthatgrows.in/cdn/shop/products/Peas.jpg?v=1598082087"
+  },
+  {
+      id: 23,
+      name: "Pumpkin",
+      price: 80,
+      image: "https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Pumpkin-sliced-open-f2b8dde.jpg?resize=768,574"
+  },
   ];
 
   export default productsData;

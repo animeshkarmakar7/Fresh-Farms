@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="footer-social">
             <div className="footer-social-details">
               <img src={whatsapp} alt="" />
-              <p>8433815521</p>
+              <p>7771342666</p>
             </div>
             <div className="footer-social-details">
               <img src={instagram} alt="" />
@@ -49,7 +49,7 @@ const Footer = () => {
       <p>2024</p>
       </span>
       
-      <p>All Rights Reserved</p>
+      <p>.All Rights Reserved</p>
      
     </div>
     

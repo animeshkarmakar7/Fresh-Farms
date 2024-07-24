@@ -7,7 +7,7 @@ export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
     let cart = {};
-    [...all_products, ...vegetable, ...fruit].forEach((product, index) => {
+    [...all_products, ...vegetable, ...fruit].forEach((product) => {
         cart[product.id] = 0;
     });
     return cart;
