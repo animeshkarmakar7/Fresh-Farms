@@ -71,7 +71,7 @@ const BuyPay = () => {
                         <p>Product not found.</p>
                     )}
                     <p>Other Modes will be added later.</p>
-                    <Link style={{textDecoration:'none'}} to='/confirmOrder'><button onClick={handleSubmit} id='form-submit'>Confirm</button></Link> 
+                    <Link style={{textDecoration:'none'}} to='/confirmOrder'><button  id='form-submit'>Confirm</button></Link> 
                 </div>
             </div>
         </>

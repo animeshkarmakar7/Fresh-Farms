@@ -3,7 +3,7 @@ import './Payment.css'
 import { ShopContext } from '../Components/Context/ShopContext'
 import { Link } from 'react-router-dom'
 
-const Payment = (product) => {
+const Payment = () => {
     const{getTotalCartAmount} = useContext(ShopContext)
 
     const [address, setAddress] = useState('');
@@ -69,7 +69,7 @@ const Payment = (product) => {
         <h1>Payment Details</h1>
        <p>Payment will be By Cash On delivery Mode;Total ${getTotalCartAmount()}</p>
        <p>Other Modes will be added later.</p>
-      <Link style={{textDecoration:'none'}} to='/confirmOrder'><button onClick={handleSubmit} id='form-submit'>Confirm</button></Link> 
+      <Link style={{textDecoration:'none'}} to='/confirmOrder'><button id='form-submit'>Confirm</button></Link> 
     </div>
     </div>
     </>
