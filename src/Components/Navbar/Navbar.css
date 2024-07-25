@@ -61,7 +61,7 @@
     height: 2rem;
 }
 
-/* Login and Cart Styles */
+
 .login {
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@
     font-weight: bolder;
 }
 
-/* Menu Styles */
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -151,7 +151,7 @@
     border-radius: 11px;
 }
 
-/* Fresh Items Grid */
+
 .fresh-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -159,7 +159,7 @@
     gap: 10px;
 }
 
-/* Dropdown Styles */
+
 .dropdown {
     position: absolute;
     top: 4rem; /* Adjusted for sticky menu */
