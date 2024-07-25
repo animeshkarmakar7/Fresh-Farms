@@ -27,7 +27,7 @@ const BuyNow = () => {
                 <h2>{product.name}</h2>
                 <p>{product.description}</p>
                 <p className="price">Price: ${product.price.toFixed(2)}</p>
-            <Link to='/confirmOrder'>  <button className="buy-button">Confirm Order</button></Link>  
+            <Link to={`/buypay/${product.id}`}>  <button className="buy-button">Confirm Order</button></Link>  
                 <Link style={{textDecoration:'none'}} to="/" className="back-link">Back to Shop</Link>
             </div>
         </div>

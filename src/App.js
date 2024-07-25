@@ -13,6 +13,8 @@ import Checkout from './Components/Checkout/Checkout'
 import ConfirmOrder from './Components/ConfirmOrder/ConfirmOrder'
 import SearchResult from './SearchResult/SearchResult'
 import BuyNow from './Components/BuyNow/BuyNow'
+import Payment from './Payment/Payment'
+import BuyPay from './Components/BuyPay/BuyPay'
 
 
 const App = () => {
@@ -34,6 +36,8 @@ const App = () => {
      <Route path='/confirmOrder' element={<ConfirmOrder/>} />
     <Route path="/product/:id" element={<SearchResult/>}/>
     <Route path='/buynow/:id' element={<BuyNow/>} />
+    <Route path='/payment' element={<Payment/>} />
+    <Route path='/buypay/:id' element={<BuyPay/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>

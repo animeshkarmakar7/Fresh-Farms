@@ -1,14 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext  } from 'react';
 import './CartItems.css';
-import { ShopContext } from '../Context/ShopContext';
+import { ShopContext , useCart } from '../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
 import { Link } from 'react-router-dom';
 import minus from '../Assets/minus.png'
 import add from '../Assets/add.png'
 
 const CartItems = () => {
-    const {addToCart , getTotalCartAmount, cartItems, removeFromCart, all_products, vegetable, fruit } = useContext(ShopContext);
 
+    const { cartItems ,getTotalCartItems } = useCart();
+   
+    const {addToCart , getTotalCartAmount,  removeFromCart, all_products, vegetable, fruit } = useContext(ShopContext);
+
+const handlecheckout = ()=>{
+    if (getTotalCartItems() === 0) {
+        alert('No items in the cart. Please add items to proceed.');
+        
+    } else {
+        alert('Ready to checkout!');
+        // Proceed with checkout logic here
+    }
+}
     
     const allProducts = [...all_products, ...vegetable, ...fruit];
 
@@ -64,7 +76,7 @@ const CartItems = () => {
                             <h3>${getTotalCartAmount()}</h3>
                         </div>
                     </div>
-                   <Link to='/checkout' ><button>PROCEED TO CHECKOUT</button></Link> 
+                   <Link to='/checkout' ><button  onClick={handlecheckout} disabled={getTotalCartItems()===0} >PROCEED TO CHECKOUT</button></Link> 
                 </div>
             </div>
         </div>

@@ -1,0 +1,66 @@
+.payment{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.left form{
+    display: flex;
+    flex-direction: column;
+}
+
+.left form label{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#address{
+    width: 50rem;
+    height: 3rem;
+    padding:1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#city{
+    width: 15rem;
+    height: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#pincode{
+    width: 15rem;
+    height: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#form-submit{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    padding: 2rem;
+    height: 1rem;
+    border: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* .submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */

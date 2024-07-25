@@ -6,6 +6,7 @@ import vegetable from '../Assets/Vegetable';
 import fruit from '../Assets/Fruits';
 import { Link } from 'react-router-dom';
 
+
 const Checkout = () => {
     const allProducts = [...all_products, ...vegetable, ...fruit];
     const { getTotalCartAmount, cartItems } = useContext(ShopContext);
@@ -51,7 +52,7 @@ const Checkout = () => {
                     <h3>${getTotalCartAmount()}</h3>
                 </div>
                 <div className="place-order">
-                 <Link to='/confirmOrder'><button>Confirm Order</button></Link>   
+                 <Link to='/payment'><button>Confirm Order</button></Link>   
                 </div>
             </div>
         </div>
