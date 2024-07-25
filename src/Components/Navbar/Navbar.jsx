@@ -7,6 +7,8 @@ import { ShopContext } from '../Context/ShopContext';
 import searchIcon from '../Assets/loupe.png';
 import products from '../Assets/products';
 
+
+
 const Navbar = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [menu , setmenu] = useState('Home')
@@ -43,6 +45,7 @@ const Navbar = () => {
                     At Your Doorsteps within mins
                 </div>
                 <div className="title">
+                
                     <p>FRESH-FARMS</p>
                 </div>
                 <div className="login">
